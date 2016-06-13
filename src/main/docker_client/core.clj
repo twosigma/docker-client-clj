@@ -84,6 +84,12 @@
   ([c id options]
    (rest/get c :container {:container-id id} options)))
 
+(defn list-containers
+  ([c id]
+   (list-containers c id {}))
+  ([c id options]
+   (rest/get c :containers options)))
+
 (defn start-container!
   ([c id]
    (start-container! c id {}))
@@ -95,6 +101,12 @@
    (stop-container! c id {}))
   ([c id options]
    (rest/post c {} :stop-container {:container-id id} options)))
+
+(defn restart-container!
+  ([c id]
+   (restart-container! c id {}))
+  ([c id options]
+   (rest/post c {} :restart-container {:container-id id} options)))
 
 (defn remove-container!
   ([c id]
