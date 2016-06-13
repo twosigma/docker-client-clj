@@ -1,6 +1,6 @@
-(defproject docker-client "0.1.5-SNAPSHOT"
+(defproject ildipo-docker-client "0.1"
   :description "A Docker client written in Clojure. Supports TLS/HTTPS."
-  :url "https://github.com/wkf/docker-client-clj"
+  :url "https://github.com/twosigma/docker-client-clj"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :test-paths ["src/test"]
